@@ -6,9 +6,9 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start --host 0.0.0.0",
-    "start:repack": "react-native webpack-start --host 0.0.0.0",
+    "start:repack": "react-native webpack-start --webpackConfig webpack.config.dev.js --host 0.0.0.0",
     "test": "jest",
-    "build": "react-native bundle --dev true --platform android  --entry-file ./index.js --bundle-output ./output/index.android.bundle --assets-dest ./output",
+    "build": "react-native bundle --dev false --platform android  --entry-file ./index.js --bundle-output ./build/index.android.bundle --assets-dest ./build",
     "build:repack": "react-native webpack-bundle --dev true --platform android  --entry-file ./index.repack.js --bundle-output ./output/index.android.bundle --assets-dest ./output",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
